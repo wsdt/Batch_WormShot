@@ -1,0 +1,1 @@
+Removed .js-files to make repository smaller. 
