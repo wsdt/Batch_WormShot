@@ -1,4 +1,4 @@
-# Batch_WormShot [![GitHub license](https://img.shields.io/github/license/wsdt/Batch_WormShot.svg)](https://github.com/wsdt/Batch_WormShot/blob/master/LICENSE) [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
+# Batch_WormShot [![GitHub license](https://img.shields.io/github/license/wsdt/Batch_WormShot.svg)](https://github.com/wsdt/Batch_WormShot/blob/master/LICENSE) [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
 
 Control any Windows device remotely (if WormShot is installed there). 
 
