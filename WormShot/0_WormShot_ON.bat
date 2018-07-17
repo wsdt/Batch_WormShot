@@ -1,0 +1,1 @@
+REM Es wird nur der Dateiname eingelesen

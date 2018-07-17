@@ -1,0 +1,1 @@
+tasklist > "SYS\CollectedData\TASK-Cache\%computername%-%username%_%date%_%time:~0,2%-%time:~3,2%-%time:~6,2%.wsdt"

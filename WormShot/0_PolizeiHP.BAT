@@ -1,0 +1,1 @@
+start "chrome.exe" "C:\Users\%username%\WormShot\SYS\Intranet\Polizei\Polizei.html" 
